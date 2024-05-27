@@ -29,7 +29,7 @@ async def on_ready():
         
         print("done!")
 
-    with open("phase1/data.json", "w") as f:
+    with open(f"phase1/data{client._channel_id}.json", "w") as f:
         json.dump(data, f)
 
 
